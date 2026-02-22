@@ -16,6 +16,20 @@ kotlin {
         }
     }
 
+    // JVM Desktop target (for MisterManager, OpenYarnStash)
+    jvm("desktop") {
+        @OptIn(ExperimentalKotlinGradlePluginApi::class)
+        compilerOptions {
+            jvmTarget.set(JvmTarget.JVM_11)
+        }
+    }
+
+    // JS Web target (for OpenYarnStash)
+    js(IR) {
+        browser()
+    }
+
+    // iOS targets
     listOf(
         iosX64(),
         iosArm64(),
