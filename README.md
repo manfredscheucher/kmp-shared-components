@@ -25,6 +25,10 @@ Shared Kotlin Multiplatform components for Compose-based applications.
 - **IntegerInput** - Integer input with +/- buttons
 - **DoubleInput** - Double/decimal input with +/- buttons
 
+### Licenses
+- **LicenseType** - Enum for common open source licenses (Apache 2.0, MIT, zlib)
+- **LicenseTexts** - Full text of common open source licenses
+
 ## Platforms
 
 - Android
